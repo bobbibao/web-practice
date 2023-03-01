@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 6A</title>
+</head>
+<style>
+  body {
+    background-color: antiquewhite;
+  }
+
+  .centre {
+    background-color: orange;
+  }
+
+  .bottom {
+    background-color: yellow;
+  }
+
+  table {
+    width: 30%;
+  }
+
+  table, tr, td {
+    height: 50px;
+    margin: auto;
+    border: 5px outset wheat;
+    border-collapse: collapse;
+  }
+</style>
+<body>
+
+  <table border="1" cellspacing="0" cellpadding="10">
+    <tr>
+      <td>1</td>
+      <td colspan="3">2</td>
+    </tr>
+    <tr>
+      <td rowspan="3">3</td>
+      <td class="centre">4</td>
+      <td class="centre">5</td>
+      <td class="bottom" rowspan="2">6</td>
+    </tr>
+    <tr>
+      <td class="centre">7</td>
+      <td class="centre">8</td>
+    </tr>
+    <tr>
+      <td class="bottom" colspan="2">9</td>
+      <td class="bottom">10</td>
+    </tr>
+  </table>
+
+</body>
+</html>

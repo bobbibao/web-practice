@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 9</title>
+</head>
+<style>
+    div {
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        color: rgb(137, 131, 131);
+        font-weight: 700;
+    }
+
+    table {
+        display: inline-block;
+        border: 1px solid red;
+        border-collapse: collapse;
+    }
+
+    td,
+    th {
+        border: 1px solid red;
+    }
+
+    tr {
+        background-color: rgb(253, 253, 149);
+    }
+
+    .bg-cl {
+        color: rgb(107, 100, 100);
+        background-color: rgb(137, 253, 253);
+    }
+
+    .DoC {
+        width: 250px;
+    }
+</style>
+<body>
+
+    <div>
+        <table id="right" cellpadding="3">
+            <thead>
+                <tr class="bg-cl">
+                    <th>Character</th>
+                    <th>HTML<br>Code*</th>
+                    <th>Character<br>Code</th>
+                    <th class="DoC">Description of Character</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&amp;#09;</td>
+                <td>&nbsp;</td>
+                <td>horizontal tab</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&amp;#10;</td>
+                <td>&nbsp;</td>
+                <td>line feed</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&amp;#13;</td>
+                <td>&nbsp;</td>
+                <td>carriage return / enter</td>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><a id="space"></a>&amp;#32;</td>
+                    <td>&nbsp;</td>
+                    <td>space</td>
+                </tr>
+                <tr>
+                    <td>!</td>
+                    <td>&amp;#33;</td>
+                    <td>&nbsp;</td>
+                    <td>exclamation mark</td>
+                </tr>
+                <tr>
+                    <td>&quot;</td>
+                    <td>&amp;#34;</td>
+                    <td>&amp;quot;</td>
+                    <td>double quote</td>
+                </tr>
+                <tr>
+                    <td>#</td>
+                    <td>&amp;#35;</td>
+                    <td>&nbsp;</td>
+                    <td>number</td>
+                </tr>
+                <tr>
+                    <td>$</td>
+                    <td>&amp;#36;</td>
+                    <td>&nbsp;</td>
+                    <td>dollar</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>&amp;#37;</td>
+                    <td>&nbsp;</td>
+                    <td>percent</td>
+                </tr>
+                <tr>
+                    <td>&amp;</td>
+                    <td>&amp;#38;</td>
+                    <td>&amp;amp;</td>
+                    <td>ampersand</td>
+                </tr>
+                <tr>
+                    <td>'</td>
+                    <td>&amp;#39;</td>
+                    <td>&amp;apos;</td>
+                    <td>single quote</td>
+                </tr>
+                <tr>
+                    <td>(</td>
+                    <td>&amp;#40;</td>
+                    <td>&nbsp;</td>
+                    <td>left parenthesis</td>
+                </tr>
+                <tr>
+                    <td>)</td>
+                    <td>&amp;#41;</td>
+                    <td>&nbsp;</td>
+                    <td>right parenthesis</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>&amp;#42;</td>
+                    <td>&nbsp;</td>
+                    <td>asterisk</td>
+                </tr>
+                <tr>
+                    <td>+</td>
+                    <td>&amp;#43;</td>
+                    <td>&nbsp;</td>
+                    <td>plus</td>
+                </tr>
+                <tr>
+                    <td>,</td>
+                    <td>&amp;#44;</td>
+                    <td>&nbsp;</td>
+                    <td>comma</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>&amp;#45;</td>
+                    <td>&nbsp;</td>
+                    <td>minus</td>
+                </tr>
+                <tr>
+                    <td>.</td>
+                    <td>&amp;#46;</td>
+                    <td>&nbsp;</td>
+                    <td>period</td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>&amp;#47;</td>
+                    <td>&amp;frasl;</td>
+                    <td>slash</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td><a id="number"></a> &amp;#48;</td>
+                    <td>&nbsp;</td>
+                    <td>zero</td>
+                </tr>
+        </table>
+        <table id="left" cellpadding="3">
+            <thead>
+                <tr class="bg-cl">
+                    <th>Character</th>
+                    <th>HTML<br>Code*</th>
+                    <th>Character<br>Code</th>
+                    <th class="DoC">Description of Character</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>CE</td>
+                <td>&amp;#140;</td>
+                <td></td>
+                <td>capital ОЕ ligature</td>
+            </tr>
+            <tr>
+                <td> &lsquo;</td>
+                <td>&amp;#145;</td>
+                <td>&amp;lsquo;</td>
+                <td>left culy quote mark</td>
+            </tr>
+            <tr>
+                <td>&rsquo;</td>
+                <td>&amp;#146;</td>
+                <td>&amp;rsquo;</td>
+                <td>right culy quote mark/apostrophe</td>
+            </tr>
+            <tr>
+                <td>&ldquo;</td>
+                <td>&amp;#147;</td>
+                <td>&amp;pound;</td>
+                <td>left curly quote marks</td>
+            </tr>
+            <tr>
+                <td>&rdquo;</td>
+                <td>&amp;#148;</td>
+                <td>&amp;nbsp;</td>
+                <td>right curly quote marks</td>
+            </tr>
+            <tr>
+                <td>&bull;</td>
+                <td>&amp;#149;</td>
+                <td>&amp;bull;</td>
+                <td>bullet</td>
+            </tr>
+            <tr>
+                <td>&ndash;</td>
+                <td>&amp;#150;</td>
+                <td>&amp;ndash;</td>
+                <td>"en" (short) dash</td>
+            </tr>
+            <tr>
+                <td>&mdash;</td>
+                <td>&amp;#151;</td>
+                <td>&amp;mdash;</td>
+                <td>"em" (long) dash</td>
+            </tr>
+            <tr>
+                <td>&tilde;</td>
+                <td>&amp;#152;</td>
+                <td>&amp;nbsp;</td>
+                <td>tilde</td>
+            </tr>
+            <tr>
+                <td>&trade;</td>
+                <td>&amp;#153;</td>
+                <td>&amp;trade;</td>
+                <td>trademark</td>
+            </tr>
+            <tr>
+                <td>&sacute;</td>
+                <td>&amp;#154;</td>
+                <td>&amp;sacute;</td>
+                <td>sacute</td>
+            </tr>
+            <tr>
+                <td>&rangle;</td>
+                <td>&amp;#155;</td>
+                <td>&amp;rangle;</td>
+                <td>right angle quto mark</td>
+            </tr>
+            <tr>
+                <td>&oelig;</td>
+                <td>&amp;#156;</td>
+                <td>&amp;oelig;</td>
+                <td>small oe ligature</td>
+            </tr>
+            <tr>
+                <td>&Yuml;</td>
+                <td>&amp;#159;</td>
+                <td>&amp;Yuml;</td>
+                <td>capital Y, umlaut</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&amp;#160;</td>
+                <td>&amp;nbsp;</td>
+                <td>non-breaking space</td>
+            </tr>
+            <tr>
+                <td>&#161;</td>
+                <td>&amp;#161;</td>
+                <td>&amp;iexcl;</td>
+                <td>inverted exclamation mark</td>
+            </tr>
+            <tr>
+                <td>&#162;</td>
+                <td>&amp;#162;</td>
+                <td>&amp;cent;</td>
+                <td>cent sign</td>
+            </tr>
+            <tr>
+                <td>&#163;</td>
+                <td>&amp;#163;</td>
+                <td>&amp;pound;</td>
+                <td>pound sign</td>
+            </tr>
+            <tr>
+                <td>&#164;</td>
+                <td>&amp;#164;</td>
+                <td>&amp;curren;</td>
+                <td>general currency sign</td>
+            </tr>
+            <tr>
+                <td>&#165;</td>
+                <td>&amp;#165;</td>
+                <td>&amp;yen;</td>
+                <td>yen sign</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

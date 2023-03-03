@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 14</title>
+</head>
+<style>
+    body {
+        background-color: rgb(250, 202, 112);
+    }
+
+    form{
+        margin: auto;
+        width: 800px;
+    }
+
+    label{
+        margin-bottom: 8px;
+        display: inline-block;
+        width: 170px;
+    }
+
+    #centre{
+        position: relative;
+        top: -75px;
+    }
+
+</style>
+<body>
+
+    <form action="">
+        <!-- input tags have to straight -->
+        <h1>Contact Us</h1>
+        <p>Use the following form to send a message to Example Cafe</p>
+        
+        <label for="ip-email">Your email</label>
+        <input type="email" name="txtEmail" id="ip-email"><br>
+
+        <label for="ip-mess" id="centre">Message</label>
+        <textarea name="message" id="ip-mess" cols="50" rows="10"></textarea><br>
+
+        <label for="ip-opt" >How did you hear of us?</label>
+        <select id="ip-opt" name="option">
+        <option value="google">Google</option>
+        <option value="apple">Apple</option>
+        <option value="microsoft">Microsoft</option>
+        <option value="twitter">Twitter</option>
+        </select><br>
+
+        <label for="ip-checkbox">Newsletter</label>
+        <input type="checkbox" name="checkbox" id="ip-checkbox">Ensure this box is checked if you would like to receive your email update<br>
+        
+        <input type="submit" value="Send message">
+    </form>
+
+</body>
+</html>

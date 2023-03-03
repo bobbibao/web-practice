@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 15</title>
+</head>
+<style>
+    body {
+        background-color: rgb(250, 202, 112);
+    }
+    div{
+        margin: auto;
+        width: 550px;
+    }
+</style>
+<body>
+    <div>
+        <fieldset>
+            <legend>Your message:</legend>
+            <table>
+                <tr>
+                    <td></td><label for="emailTo">To</label></td>
+                    <td><input type="text" name="txtTo" readonly="readonly" id="emailTo" size="20" value="Example Cafe">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="emailFrom">Your email</label></td>
+                    <td><input type="text" name="txtFrom" id="emailFrom" size="20" tabindex="1" maxlength="258"></td>
+                </tr>
+                <tr>
+                    <td><label for="emailBody">Message</label></td>
+                    <td><textarea name="txtBody" id="emailBody" cols="50" rows="10" tabindex="2"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>How you find us:</legend>
+            <table>
+                <tr>
+                    <td width="120px"> <label for="ip-opt">How did you hear of us?</label></td>
+                    <td>
+                        <select id="ip-opt" name="option" style="width: 150px;">
+                            <option value="google">Google</option>
+                            <option value="apple">Apple</option>
+                            <option value="microsoft">Microsoft</option>
+                            <option value="twitter">Twitter</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="ip-checkbox">Newsletter</label> </td>
+                    <td><input type="checkbox" name="checkbox" id="ip-checkbox" checked>Ensure this box is checked if you would
+                        like to receive your email update<br></td>
+                </tr>
+            </table>
+        </fieldset>
+        <input type="submit" value="Send message">
+    </div>
+</body>
+
+</html>

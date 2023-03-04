@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 19</title>
+</head>
+<style>
+    body {
+        background-color: rgb(250, 202, 112);
+    }
+    #container {
+        width: 200px;
+        margin: auto;
+    }
+</style>
+<body>
+    <div id="container">
+        <div>
+            <p>.mp4</p>
+            <video poster="./exercise19-assets/smile.png" width="200" height="200" controls>
+              <source src="./exercise19-assets/video.mp4" type='video/mp4;
+                codecs="avc1.42E01E, mp4a.40.2"'/>
+              <img alt="Smiley face" src="./exercise19-assets/smile.png" width="200">
+            </video>
+        </div>
+        <div>
+            <p>.webm</p>
+            <video poster="./exercise19-assets/planets.gif" width="200" height="200" controls>
+                <source src="./exercise19-assets/video2.webm" type='video/webm;
+                    codecs="vp8, vorbis"'/>
+                <img alt="Animated planets gif" src="./exercise19-assets/planets.gif" width="200">
+            </video>
+        </div>
+        <div>
+            <p>.ogv</p>
+            <video poster="./exercise19-assets/light.png" width="200" height="200" controls>
+                <source src="./exercise19-assets/video3.ogv" type='video/ogg;
+                    codecs="theora, vorbis"'/>
+                <img alt="Animated light bulb clipart" src="./exercise19-assets/light.png" width="200">
+            </video>
+        </div>    
+    </div>  
+</body>
+</html>

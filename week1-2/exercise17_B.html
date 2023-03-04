@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 17B</title>
+</head>
+<style>
+    body {
+        background-color: rgb(250, 202, 112);
+    }
+
+    div {
+        width: 500px;
+        margin: auto;
+    }
+
+    input,
+    select {
+        margin-bottom: 10px;
+    }
+</style>
+
+<body>
+    <div>
+        <form action="">
+            <label for="browser">Browser:</label>
+            <select name="browser" id="browser">
+                <option value="" disabled selected>--Choose an browser--</option>
+                <option value="chrome">Chrome</option>
+                <option value="firefox">Firefox</option>
+                <option value="safari">Safari</option>
+                <option value="opera">Opera</option>
+                <option value="edge">Edge</option>
+            </select><br>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" size="30"><br>
+
+            <label for="encryption">Encryption:</label>
+            <select id="encryption" name="encryption">
+              <option value="" disabled selected>--Choose an encryption level--</option>
+              <option value="low grade">128-bit (Low Grade)</option>
+              <option value="medium grade">256-bit (Medium Grade)</option>
+              <option value="high grade">2048-bit (High Grade)</option>
+            </select><br> 
+            
+
+            <label for="speed-input">Speed:</label>
+            0<input type="range" name="speed" id="speed-input" min="0" max="100" oninput="updateSpeedValue()">100<br>
+            <label for="currentSpeed">Current speed: <span id="speed-value">0</span></label> <br> <br>
+            <script>
+              function updateSpeedValue() {
+                var speedInput = document.getElementById("speed-input");
+                var speedValue = document.getElementById("speed-value");
+                speedValue.textContent = speedInput.value;
+              }
+            </script>
+
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="birthday" id="birthday" size="30"><br>
+
+            <label for="color">Select your favourite color:</label>
+            <input type="color" name="color" id="color" value="#FF0000"><br>
+
+            <label for="birthday_mmyy">Birthday (month and year):</label>
+            <input type="month" name="birthday_mmyy" id="birthday_mmyy"><br>
+            
+            <label for="week">Select a week:</label>
+            <input type="week" name="week" id="week"><br>
+
+            <label for="time">Select a time:</label>
+            <input type="time" name="time" id="time"><br>
+
+            <label for="birthday_dd_time">Birthday (date and time):</label>
+            <input type="datetime-local" name="birthday_dd_time" id="birthday_dd_time" size="30"><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" size="30"><br>
+
+            <label for="search">Search Google:</label>
+            <input type="search" name="search" id="search" size="30"><br>
+
+            <label for="telephone">Telephone:</label>
+            <input type="tel" name="telephone" id="telephone" size="30" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+            
+            <label for="homepage">Add your homepage:</label>
+            <input type="url" name="homepage" id="homepage" size="30" style="margin:10 0 0 0; "> <br>
+        
+            <input type="submit" name="submit" id="submit" value="Submit">
+            <p><b>Note:</b> The datalist tag is not supported in Safari or IE9 (and earlier).</p>
+        </form>
+    </div>
+</body>
+
+</html>

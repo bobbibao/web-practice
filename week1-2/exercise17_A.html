@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 17A</title>
+</head>
+<style>
+    body {
+        background-color: rgb(250, 202, 112);
+    }
+
+    #form {
+        width: 700px;
+        margin: auto;
+    }
+
+    #submit {
+        display: flex;
+        justify-content: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    form {
+        font-size: large;
+    }
+</style>
+
+<body>
+    <div id="form">
+        <form action="">
+            <h2>Survey Form</h2>
+            <p>if you are interesting in purchasing one or more of our porducts, before ordering please complete som or
+                all of the following survey our maketing department. Answering any question is optional, and all
+                information will be kept strctly confidential. Thank you very much for your time!</p>
+
+            <ol>
+                <li>
+                    <label for="input-name">What is your name?</label><br>
+                    <input type="text" name="name" id="input-name" size="40">
+                </li>
+
+                <li>
+                    <label for="input-date">What is your date of birth?</label><br>
+                    <label for="month">Month:</label>
+                    <select name="month" id="month">
+                        <option value="01">January</option>
+                        <option value="02">February</option>
+                        <option value="03">March</option>
+                        <option value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+
+                    <label for="date">Date:</label>
+                    <select name="date" id="date">
+                        <script>
+                            const currentYear = new Date().getFullYear();
+
+                            for (let i = 1; i <= 31; i++) {
+                                const option = document.createElement('option');
+                                option.value = i.toString().padStart(2, '0');
+                                option.textContent = i;
+                                document.querySelector('#date').appendChild(option);
+                            }
+                        </script>
+                    </select>
+                    <label for="year">Year:</label>
+                    <input type="number" name="year" id="year" min="1900" max="2099">
+
+                </li>
+
+                <li>
+                    <label for="textarea-address">
+                        What is your mailing address (if you would like to have a hard copy of our catalog sent to
+                        you)?<br>
+                    </label>
+                    <textarea name="address" id="textarea-address" cols="50" rows="4"
+                        placeholder="Number/P.O Box/route:&#10;Street/Avenue/Road:&#10;City:&#10;State/Zip:"></textarea>
+                </li>
+
+                <li>
+                    <label for="input-email">What is your email address?</label><br>
+                    <input type="email" name="email" id="input-email" size="30">
+                </li>
+
+                <li>
+                    <fieldset>
+                        <legend>Have you viewed our online catalog?</legend>
+                        <label><input type="radio" name="catalog_viewed" value="yes" checked>Yes</label>
+                        <label><input type="radio" name="catalog_viewed" value="no">No</label>
+                    </fieldset>
+
+                </li>
+
+                <li>
+                    <fieldset>
+                        <legend>If so, what product(s), besides the one you are ordering, might you be interested in
+                            purchasing in the future? (Check all that apply.)</legend>
+                        <input type="checkbox" name="products_interested[]" id="optionOne" value="VCR">
+                        <label for="optionOne">VCR</label> <br>
+                        <input type="checkbox" name="products_interested[]" id="optionTwo" value="Big Screen TV">
+                        <label for="optionTwo">Big Screen TV</label> <br>
+                        <input type="checkbox" name="products_interested[]" id="optionThree" value="Audio Equipment">
+                        <label for="optionThree">Audio Equipment</label> <br>
+                        <input type="checkbox" name="products_interested[]" id="optionFour" value="Video Equipment">
+                        <label for="optionFour">Video Equipment</label> <br>
+                        <input type="checkbox" name="products_interested[]" id="optionFive" value="Camera Equipment">
+                        <label for="optionFive">Camera Equipment</label> <br>
+                        <input type="checkbox" name="products_interested[]" id="optionSix" value="Other" checked>
+                        <label for="optionSix">Other</label>
+                        <input type="text" name="other_interests" placeholder="Please List:" size="40">
+                    </fieldset>
+                </li>
+
+                <li>
+                    <label for="textarea-question">Do you have any questions, comments or suggertions before proceeding
+                        to Order Form?</label>
+                    <textarea name="input" id="textarea-question" cols="45" rows="6"
+                        placeholder="Your Input:"></textarea>
+                </li>
+            </ol>
+            <div id="submit">
+                <input type="submit" value="Send Form">
+                <input type="submit" value="Clear Form" style="margin-left: 20px;">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

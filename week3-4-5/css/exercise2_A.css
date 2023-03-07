@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(250, 202, 112);
+}
+div{
+    width:500px; height:auto;margin: auto; padding: 8px;box-shadow: 0 0 20px rgb(78, 77, 77);
+}
+#p1{
+    text-indent:1cm; color:red;text-align:justify;
+}
+#p2{
+    text-align:right; color:blue
+}
+#p3{
+    text-align:center; color:green;
+}
+#p4{
+    text-align:left; color:brown;
+}
+#p5{
+    text-decoration:underline; color:rgb(241, 102, 125);
+}
+#p6{
+    text-decoration:line-through;color:purple;
+}
+#p7{
+    text-decoration:overline; color:red;
+}
+#p8{
+    text-decoration:blink; text-align:justify; color:blue;text-shadow:4px 4px 8px blue;
+}

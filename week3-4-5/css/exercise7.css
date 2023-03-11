@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(250, 220, 112);
+}
+div{
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+}
+p{
+    
+    column-count: 3;
+    column-gap: 50px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: rgb(88, 247, 247);
+
+}

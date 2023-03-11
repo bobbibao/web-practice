@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(250, 202, 112);
+}
+
+* {
+    font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+div {
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+caption {
+    margin: 20px;
+    color:#993738;
+    font-weight: 600;
+}
+
+table,
+thead,
+tbody {
+    border: 1px solid rgb(152, 55, 55);
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(182, 164, 164);
+}
+
+thead {
+    background-color: #993738;
+    color: rgb(236, 233, 233);
+}
+
+th:nth-child(1) {
+    text-align: left;
+}
+
+th:nth-child(2) {
+    text-align: right;
+}
+
+td:last-child {
+    text-align: right;
+}

@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(250, 220, 112);
+}
+
+.container,
+.row {
+    width: 80%;
+    margin: auto;
+}
+
+.row:after,
+.row:before {
+    display: table;
+    content: "";
+}
+
+.row:after {
+    clear: both;
+}
+
+.col {
+    float: left;
+    width: 27%;
+    margin: 1%;
+    padding: 1%;
+}

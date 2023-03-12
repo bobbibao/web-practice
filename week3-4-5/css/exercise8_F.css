@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(250, 220, 112);
+}
+div{
+    width: 200px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+#round-rectangle{
+    border: 8px solid rgb(243, 193, 13);
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+
+}

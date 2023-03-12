@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(250, 202, 112);
+}
+div{
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
+    text-align: center;
+}
+button{
+    width: 66%;
+    background-color: #5489C5;
+    padding: 10px;
+    color: #fff;
+    border-color: #357ebd;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    vertical-align: middle;
+    font-size: 125%;
+    font-weight: 900;
+}

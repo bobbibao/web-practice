@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(250, 220, 112);
+}
+div{
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+#adv-left{
+    background: #A8DA52;
+    border-width: 4px 30px;
+    border-style: solid;
+    border-color: #56D6C9 #56D6C9 #FE2192 #FE2192;
+    border-radius: 0 120px;
+    -moz-border-radius: 0 120px 0 120px;
+    -webkit-border-radius: 0 120px 0 120px;
+}

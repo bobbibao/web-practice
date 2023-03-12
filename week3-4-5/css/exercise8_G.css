@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(250, 220, 112);
+}
+div{
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+#adv-round-rectangle{
+    border-width: 0 12px;
+    border-style: double;
+    border-color: violet;
+    border-radius: 40px 40px 60px 60px;
+    -moz-border-radius: 40px 40px 60px 60px;
+    -webkit-border-radius: 40px 40px 60px 60px;
+}

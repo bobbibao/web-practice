@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(250, 220, 112);
+}
+
+#animated{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: 100px;
+    background-color: rgb(233, 187, 24);
+}
+@-webkit-keyframes scroll{
+    to{
+        left:100%;
+        -webkit-transform: rotate(180deg);
+    }
+}
+@keyframes scroll{
+    to{
+        left: 100%;
+        transform: rotate(180deg);
+    }
+}
+div{
+    animation-name: scroll;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}

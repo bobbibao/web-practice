@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(250, 220, 112);
+}
+.container{
+    width: 700px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.transition{
+    width: 300px;
+    height: 170px;
+    background-color: #6FAC21;
+    opacity: 0.8;
+    border-radius: 10px;
+    transition: all 2s linear;
+    text-align: justify;
+    border: 4px red;
+    border-style: double dashed dashed double;
+}
+.transition:hover{
+    transform: scale(2) rotate(360deg);
+    background-color: #1EC7e6;
+    opacity: 0.8;
+}
+p{
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 16px;
+    transform: all 2s;
+}

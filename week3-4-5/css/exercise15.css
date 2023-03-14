@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(250, 220, 112);
+}
+div{
+    width: 400px;
+    margin: auto;
+    margin-top: 90px;
+}
+input{
+    width: 100px;
+    transition: width .35s ease-in-out;
+}
+input:focus{
+    width: 250px;
+    background-color: lightgreen;
+}

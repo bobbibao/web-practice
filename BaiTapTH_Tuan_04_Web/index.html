@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
-    <title>Meeting Web</title>
+    <title>Meeting Room</title>
 </head>
 <body>
     <div id="grid-container">
@@ -29,7 +29,56 @@
                 </div>
             </div>
         </div>
-        <div class="grid-content">Meeting</div>
+        <div class="grid-content">
+            <div class="flex-header">
+                <h2 style="font-size: 20px; line-height: 2;">Meeting title</h2>
+                <div class="time-record"><span style="font-size: 13px; text-align: center;"></span> <b style="font-size: 20px;margin-right: 10px;">•</b>  12:03</div>
+            </div>
+            <div class="flex-detail">
+                <div class="detail active" style="display: flex; align-items: center; border-radius: 20px;"> 
+                    <img src="./images/user.png" width="15px" style="background-color: white; border-radius: 50%; margin-right: 5px;" alt="User">
+                    Internal
+                </div>
+                <div class="detail" style="display: flex; align-items: center; border-right: 1px solid rgb(228, 228, 228);">
+                    <img src="./images/calender_small.png" style="margin-right: 7px;" alt="Calender Small">
+                    Sep 02, 2022
+                </div>
+                <div class="detail">08:00 - 09:00 AM</div>
+            </div>
+            <div class="flex-screen">
+                <div class="large-screen">
+                    <div class="name_speaker"><b style="color: rgb(14, 199, 14); font-size: 15px;">•</b> Benjamin Crawford</div>
+                    <img src="./images/mic_color.png" alt="Micro active">
+                </div>
+                <div class="flex-small-screen">
+                    <div id="first-user">
+                        <div class="name_speaker"><b style="color: rgb(14, 199, 14); font-size: 13px;">•</b> Christian Scott</div>
+                        <img src="./images/mic2.png" alt="Micro active">
+                    </div>
+                    <div>
+                        <div class="name_speaker"><b style="color: rgb(14, 199, 14); font-size: 13px;">•</b> Deborah chu</div>
+                        <img src="./images/mic2.png" alt="Micro active">
+                    </div>
+                    <div>
+                        <div class="name_speaker"><b style="color: rgb(14, 199, 14); font-size: 13px;">•</b> Jodan Nieves</div>
+                        <img src="./images/mic2.png" alt="Micro active">
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex-func-container">
+                <div class="flex-func">
+                    <img src="./images/mic_grey_color.png" alt="Micro">
+                    <img src="./images/cam_color.png" alt="Camera">
+                    <img src="./images/speaker_grey_color.png" alt="Speaker">
+                    <div class="end-meeting"><span>End-meeting</span> </div>
+                    <img src="./images/share_screen.png" alt="Share Screen">
+                    <img src="./images/share.png" alt="Share">
+                    <img src="./images/more.png" alt="More">
+                </div>
+            </div>
+
+        </div>
         <div class="grid-nav right">Participants</div>
     </div>
 

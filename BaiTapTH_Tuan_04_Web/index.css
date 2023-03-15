@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 80px auto 450px;
+    grid-template-areas: "nav content nav";
+    height: 900px;
+}
+
+.grid-nav {
+    padding: 10px;
+    grid-area: 'nav';
+    background-color: greenyellow;
+    height: 100%;
+}
+
+.grid-content {
+    padding: 10px;
+    grid-area: 'content';
+    background-color: aqua;
+    height: 100%;
+}

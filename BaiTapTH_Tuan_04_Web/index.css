@@ -215,3 +215,74 @@ div .new{
     right: 7px;
     top: 7px;
 }
+.btn {
+    border: 1px solid red;
+    border-radius: 5px;
+    text-align: center;
+    padding: 7px 10px;
+    color: red;
+}
+#sub-ppt{
+    position:absolute; top: 2px;right: -20px ;font-size: 12px; font-weight: 400; padding: 1px 5px; border-radius: 50%; margin-left: 10px; background-color: #FBF2F4; color: red;
+}
+.list-users-joint {
+    height: 23%;
+    border-bottom: 1.5px solid rgb(245, 239, 239);
+    padding-bottom: 30px;
+}
+
+.grid-nav.right{
+    padding: 30px;
+}
+.flex-user-joint {
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.flex-user-joint .left {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.flex-user-joint .right {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.flex-user-joint .right img{
+    margin-left: 10px;
+}
+.flex-chat {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.flex-chat .user {
+    height: 15%;
+    position: relative;
+}
+.user .info{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info span:nth-child(1){
+    margin-left: 30px;
+}
+.flex-chat .input {
+    display: flex;
+    align-items: end;
+}
+input{
+    width: 75%;
+    border: none;
+    border-radius: 3px;
+    background-color: #F3F4F6;
+}

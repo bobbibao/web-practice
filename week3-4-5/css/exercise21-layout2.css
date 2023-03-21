@@ -6,13 +6,12 @@ body {
     width:600px;
     margin: auto;
     display: grid;
-    grid-template-columns: 25% 50% 25%;
     grid-template-rows: 50px 250px 50px;
     background-color: rgb(194, 216, 159);
     grid-template-areas:
-        'header header header'
-        'nav content section'
-        'footer footer footer';
+        'header header header header'
+        'nav content content section'
+        'footer footer footer footer';
     border: 1px solid black;
 }
 

@@ -1,0 +1,71 @@
+.grid-container{
+    padding: 0 100px;
+    color: #7B7978;
+}
+.header{
+    
+    background-image: url(../html/exercise24_B_img3.png);
+    background-size:contain;
+    height: 170px;
+    background-repeat: no-repeat;
+}
+.menu{
+    background-color: #AEACA8;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.menu a{
+    text-decoration: none;
+    padding: 5px 20px;
+    color: #fff;
+}
+.menu a.active{
+    color: #000000;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    width: 69%;
+    margin: 15px;
+}
+.card{
+    width: 45%;
+    padding: 5px!important;
+    border: 1px solid grey;
+    display: inline-block;
+    overflow: hidden;
+}
+.discribe{
+    display: inline-block;
+    width: 45%;
+    margin-top:20px;
+    padding: 0 20px;
+    position: relative;
+    height: 222px;
+}
+.right{
+    width: 30%;
+    border-left: 1px solid rgb(191, 191, 191);
+    color: crimson;
+    padding: 10px 15px 20px 15px;
+    height: 100%;
+}
+.right p:nth-child(-n+5){
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(211, 209, 209);
+}
+.right p:nth-child(n+6){
+    color: #000000;
+}
+.footer{
+    background-color:#b7b6b5;
+    padding: 10px 20px;
+    color: #ffffff;
+}
+.footer p{
+    margin: 0;
+    font-size: 14px;
+}

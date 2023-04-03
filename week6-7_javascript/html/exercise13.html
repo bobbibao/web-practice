@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 13</title>
+    <style>
+        /* Use a CSS reset to remove browser defaults */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        
+        /* Define variables for colors and font families */
+        :root {
+          --primary-color: rgb(250, 220, 112);
+          --text-color: #333;
+          --font-family: 'Arial', sans-serif;
+        }
+        
+        /* Apply variables to body */
+        body {
+          background-color: var(--primary-color);
+          color: var(--text-color);
+          font-family: var(--font-family);
+          font-size: 16px;
+        }
+        
+        /* Style the container div */
+        .container {
+          display: flex;
+          justify-content: center;
+          align-items: center; 
+          height: 40vh;
+        }
+        
+        /* Style the input and button */
+        .input-group {
+          position: relative;
+          width: 300px;
+        }
+        .input-group input[type="text"] {
+          padding: 10px;
+          width: 100%;
+          font-size: 1.2rem;
+          border-radius: 5px;
+          border: none;
+        }
+        .input-group button {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          padding: 10px 20px;
+          font-size: 1.2rem;
+          background-color: var(--primary-color);
+          color: var(--text-color);
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+        .input-group button:hover {
+          background-color: var(--text-color);
+          color: var(--primary-color);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-group">
+            <input type="text" name="" id="creditCard">
+            <button id="btn">Check</button>
+        </div>
+    </div>
+    <script src="../javascript/exercise13.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>Clock</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <input type="text" id="minute">
+      <span>:</span>
+      <input type="text" id="second">
+      <span>:</span>
+      <input type="text" id="millisecond">
+      <button onclick="startTimer()">Start</button>
+      <button onclick="lapTimer()">Lap</button>
+      <button onclick="stopTimer()">Stop</button>
+      <button onclick="resetTimer()">Reset</button>
+
+    </div>
+    <hr>
+    <div id="history">
+    </div>
+  </main>
+
+
+  <script src="./index.js">
+  </script>
+</body>
+
+</html>
